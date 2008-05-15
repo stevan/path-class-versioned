@@ -144,7 +144,7 @@ Path::Class::Versioned - A simple module for managing versioned file names
 
 =head1 DESCRIPTION
 
-Cmon, you know you have done this too, so why bother writing it over
+C'mon, you know you have done this too, so why bother writing it over
 and over again, just use this module. 
 
 This module aims to provide a simple, yet sophisticated way of creating
@@ -229,6 +229,18 @@ Returns a L<Path::Class::Dir> object for the value of C<next_name(dir => 1)>.
 All complex software has bugs lurking in it, and this module is no 
 exception. If you find a bug please either email me, or add the bug
 to cpan-RT.
+
+=head1 ACKNOWLEDGEMENTS
+
+NO ONE IS INNOCENT! Here are the names of those who are especially guilty.
+
+=over 4
+
+=item Thanks to perigrin for holding back the snide comments when I suggested this module.
+
+=item Thanks to rjbs for the module name (although he may deny any involvment).
+
+=back
 
 =head1 AUTHOR
 
