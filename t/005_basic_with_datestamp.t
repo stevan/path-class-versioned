@@ -10,14 +10,14 @@ use Test::Exception;
 BEGIN {
     eval "use DateTime;";
     plan skip_all => "DateTime is required for this test" if $@;
-    plan no_plan => 1;
+    plan tests => 12;
     use_ok('Path::Class::Versioned');
 }
 
 {
     package AdHoc::DateTime::Formatter;
     use Moose;
-    
+
     sub format_datetime {
         my ($self, $datetime) = @_;
         $datetime->strftime("%Y-%m-%d");

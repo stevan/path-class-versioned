@@ -4,7 +4,7 @@ use strict;
 use warnings;
 use FindBin;
 
-use Test::More no_plan => 1;
+use Test::More tests => 12;
 use Test::Exception;
 
 BEGIN {
@@ -21,7 +21,7 @@ my $v = Path::Class::Versioned->new(
 isa_ok($v, 'Path::Class::Versioned');
 
 foreach my $i (6 .. 10) {
-    push @FILES_TO_DELETE => $v->next_name;    
+    push @FILES_TO_DELETE => $v->next_name;
     is($v->next_name, ('Foo-v' . $i . '.txt'), '... got the right next filename');
     my $f = $v->next_file;
     isa_ok($f, 'Path::Class::File');

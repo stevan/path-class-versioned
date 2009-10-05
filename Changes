@@ -1,6 +1,10 @@
 Revision history for Perl extension Path::Class::Versioned
 
+0.02 Mon. Oct. 5, 2009
+    - fixing issue with old MooseX::Params::Validate
+        - adding plans to the tests
+
 0.01 Wed. May 14, 2008
-    - putting ointment on an itch that keeps 
-      flaring up from time to time, instead 
+    - putting ointment on an itch that keeps
+      flaring up from time to time, instead
       of just scratching it all the time.

@@ -4,7 +4,7 @@ use strict;
 use warnings;
 use FindBin;
 
-use Test::More no_plan => 1;
+use Test::More tests => 31;
 use Test::Exception;
 
 BEGIN {
@@ -17,7 +17,7 @@ my $SCRATCH_DIR = Path::Class::Dir->new($FindBin::Bin, 'scratch');
 
 foreach my $i (1 .. 5) {
     my $time = time();
-    
+
     foreach my $j (1, 2) {
         my $v = Path::Class::Versioned->new(
             version_format => '%02d',
@@ -25,15 +25,15 @@ foreach my $i (1 .. 5) {
             parent         => $SCRATCH_DIR
         );
         isa_ok($v, 'Path::Class::Versioned');
-    
+
         push @FILES_TO_DELETE => $v->next_name;
-    
+
         is($v->next_name, ("Baz-${time}-v" . sprintf("%02d", $j) . ".txt"), '... got the right next filename');
         my $f = $v->next_file;
         isa_ok($f, 'Path::Class::File');
         $f->touch;
     }
-    
+
     sleep(1);
 }
 
