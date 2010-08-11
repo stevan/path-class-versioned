@@ -42,7 +42,7 @@ has 'version_format' => (is => 'ro', isa => 'Str', default => sub { '%d' });
 
 has '_compiled_name_pattern' => (
     is      => 'ro',
-    isa     => 'Regexp',
+    isa     => 'RegexpRef',
     lazy    => 1,
     default => sub {
         my $self = shift;
