@@ -19,8 +19,4 @@ t/002_basic_w_formatter.t
 t/003_basic_dir.t
 t/004_basic_w_timestamp.t
 t/005_basic_with_datestamp.t
-t/scratch/Bar-2008-05-14-v0001.txt
-t/scratch/Bar-2008-05-14-v0002.txt
-t/scratch/Bar-2008-05-14-v0003.txt
-t/scratch/Foo-v1.txt
-t/scratch/Foo-v5.txt
+t/scratch/temp.txt
