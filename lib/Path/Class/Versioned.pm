@@ -6,7 +6,7 @@ use MooseX::Params::Validate;
 
 use List::Util 'max';
 
-our $VERSION   = '0.03';
+our $VERSION   = '0.04';
 our $AUTHORITY = 'cpan:STEVAN';
 
 # this is a basic type for objects

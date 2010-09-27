@@ -1,5 +1,8 @@
 Revision history for Perl extension Path::Class::Versioned
 
+0.04 Mon. Sep. 27, 2010
+    - fix broken tests
+
 0.03 Wed. Aug. 11, 2010
     - s/Regexp/RegexpRef/ so that it works with newer Moose
 
